@@ -10,95 +10,84 @@ title: About Us
 
 Certifications:
 
-
 <div class="image-row">
-  <div class="image-container">
-    <img src="{{ '/public/CHN.png' | absolute_url }}" alt="中文授权书">
-    <p class="image-caption">中文授权书</p>
-  </div>
-  <div class="image-container">
-    <img src="{{ '/public/EN.png' | absolute_url }}" alt="英文授权书">
-    <p class="image-caption">英文授权书</p>
-  </div>
-  <div class="image-container">
-    <img src="{{ '/public/Cer.jpg' | absolute_url }}" alt="营业执照">
-    <p class="image-caption">营业执照</p>
-  </div>
+  <img src="{{ '/public/CHN.png' | absolute_url }}" alt="中文授权书">
+  <img src="{{ '/public/EN.png' | absolute_url }}" alt="英文授权书">
+  <img src="{{ '/public/Cer.jpg' | absolute_url }}" alt="营业执照">
 </div>
 
 <style>
-.image-row {
+.compact-image-row {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 40px 0;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: nowrap; /* 确保严格在一排 */
   align-items: flex-start;
 }
 
-.image-container {
+.compact-image-container {
   flex: 1;
-  min-width: 250px;
+  max-width: 200px; /* 控制最大宽度 */
   text-align: center;
 }
 
-.image-container img {
+.compact-image-container img {
   width: 100%;
-  height: 300px; /* 固定高度保持一致性 */
-  object-fit: contain; /* 保持图片完整比例 */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  background-color: #f8f9fa; /* 白色背景图片的底色 */
-  padding: 10px;
+  height: 150px; /* 较小的高度 */
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+  padding: 8px;
   transition: all 0.3s ease;
 }
 
-.image-container img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.compact-image-container img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.image-caption {
-  margin-top: 12px;
-  font-size: 16px;
-  font-weight: 500;
+.compact-caption {
+  margin-top: 8px;
+  font-size: 14px;
   color: #333;
-  line-height: 1.4;
+  font-weight: 500;
+  line-height: 1.3;
 }
 
-/* 平板设备适配 */
-@media (max-width: 1024px) {
-  .image-container {
-    min-width: 200px;
-  }
-  .image-container img {
-    height: 250px;
-  }
-}
-
-/* 移动端适配 */
+/* 平板适配 */
 @media (max-width: 768px) {
-  .image-row {
-    flex-direction: column;
-    gap: 30px;
+  .compact-image-row {
+    gap: 10px;
   }
-  .image-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+  .compact-image-container {
+    max-width: 180px;
   }
-  .image-container img {
-    height: 300px;
+  .compact-image-container img {
+    height: 120px;
+  }
+  .compact-caption {
+    font-size: 13px;
   }
 }
 
-/* 小屏手机适配 */
+/* 小屏手机强制保持一排 */
 @media (max-width: 480px) {
-  .image-container img {
-    height: 250px;
+  .compact-image-row {
+    gap: 8px;
+    flex-wrap: nowrap; /* 强制不换行 */
+    overflow-x: auto; /* 如果太窄可以横向滚动 */
   }
-  .image-caption {
-    font-size: 14px;
+  .compact-image-container {
+    max-width: 150px;
+    min-width: 120px; /* 设置最小宽度 */
+  }
+  .compact-image-container img {
+    height: 100px;
+  }
+  .compact-caption {
+    font-size: 12px;
   }
 }
 </style>
