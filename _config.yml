@@ -13,4 +13,18 @@ author:
   url:               
   email:             xuwenxin@shmiaofeng.cn
 
-permalink: /:title/
+# 允许无日期帖子命名
+permalink: /blog/:title/
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title
+
+# 设置默认值
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
