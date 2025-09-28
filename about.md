@@ -17,77 +17,39 @@ Certifications:
 </div>
 
 <style>
-.compact-image-row {
+.image-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 15px;
-  margin: 20px 0;
-  flex-wrap: nowrap; /* 确保严格在一排 */
-  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  align-items: center;
 }
 
-.compact-image-container {
+.image-row img {
   flex: 1;
-  max-width: 200px; /* 控制最大宽度 */
-  text-align: center;
+  min-width: 200px;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.compact-image-container img {
-  width: 100%;
-  height: 150px; /* 较小的高度 */
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  background-color: #f8f9fa;
-  padding: 8px;
-  transition: all 0.3s ease;
+.image-row img:hover {
+  transform: scale(1.05);
 }
 
-.compact-image-container img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.compact-caption {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-/* 平板适配 */
 @media (max-width: 768px) {
-  .compact-image-row {
-    gap: 10px;
+  .image-row {
+    flex-direction: column;
+    gap: 20px;
   }
-  .compact-image-container {
-    max-width: 180px;
-  }
-  .compact-image-container img {
-    height: 120px;
-  }
-  .compact-caption {
-    font-size: 13px;
-  }
-}
-
-/* 小屏手机强制保持一排 */
-@media (max-width: 480px) {
-  .compact-image-row {
-    gap: 8px;
-    flex-wrap: nowrap; /* 强制不换行 */
-    overflow-x: auto; /* 如果太窄可以横向滚动 */
-  }
-  .compact-image-container {
-    max-width: 150px;
-    min-width: 120px; /* 设置最小宽度 */
-  }
-  .compact-image-container img {
-    height: 100px;
-  }
-  .compact-caption {
-    font-size: 12px;
+  .image-row img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
   }
 }
 </style>
