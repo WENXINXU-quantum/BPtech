@@ -12,3 +12,5 @@ author:
   name:              Wenxin Xu
   url:               
   email:             xuwenxin@shmiaofeng.cn
+
+permalink: /:title/
