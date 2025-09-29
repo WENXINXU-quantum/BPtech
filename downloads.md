@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Downloads"
-permalink: /downloads/
 ---
 
 # 文件下载中心
