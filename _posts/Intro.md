@@ -1,12 +1,21 @@
 ---
 layout: post
-title: Quantum Computing Customized Solutions
+title: "公司简介"
 ---
 
-[Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
+# B&P Technology - 量子科技的引领者
 
-  > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
+B&P Technology是一家专注于量子信息和量子计算技术的集成商和供应商，为全球客户提供定制化的产品解决方案。
 
-It's an immensely useful tool and one we encourage you to use here with Lanyon.
+## 我们的使命
 
-Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+推动量子计算技术的发展，让量子科技惠及各行各业。
+
+## 核心业务
+
+- **量子计算硬件**：“祖冲之号同款”超导量子计算芯片
+- **量子软件**：量子算法开发、量子编程平台
+- **技术服务**：量子计算咨询、系统集成
+- **教育培训**：量子技术培训课程
+
+![量子实验室]({{ '/public/images/lab.jpg' | absolute_url }})
