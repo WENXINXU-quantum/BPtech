@@ -4,8 +4,6 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <!-- 删除或注释掉下面这行日期显示 -->
-  <!-- <span class="post-date">{{ page.date | date_to_string }}</span> -->
   {{ content }}
 </div>
 
@@ -18,8 +16,6 @@ layout: default
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <!-- 也删除相关文章中的日期 -->
-            <!-- <small>{{ post.date | date_to_string }}</small> -->
           </a>
         </h3>
       </li>
