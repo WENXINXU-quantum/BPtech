@@ -10,9 +10,7 @@
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
-    
-    <!-- Product 子目录 -->
-    <a class="sidebar-nav-item{% if page.url contains '/product/' %} active{% endif %}" href="{{ '/product/' | absolute_url }}">Product</a>
+
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
