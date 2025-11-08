@@ -8,7 +8,7 @@ title: About Us
 
 </p>
 
-Certifications:
+## Certifications:
 
 <div class="image-row">
   <img src="{{ '/public/CHN.png' | absolute_url }}" alt="中文授权书">
@@ -16,6 +16,13 @@ Certifications:
   <img src="{{ '/public/Cer.jpg' | absolute_url }}" alt="营业执照">
 </div>
 
+## Contact Us
+
+<div class="contact-box">
+  <p><strong>Email:</strong> xuwenxin@shmiaofeng.cn</p>
+  <p><strong>Phone:</strong> +86 13816069594</p>
+  <p><strong>Address:</strong> Bldg. 1, Yuhongxing Tiandi, 2 Runye Rd., Jiading Dist., Shanghai, China</p>
+</div>
 <style>
 .image-row {
   display: flex;
