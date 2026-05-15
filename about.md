@@ -21,6 +21,7 @@ title: About Us
 <div class="contact-box">
   <p><strong>Email:</strong> xuwenxin@bpquantum.com</p>
   <p><strong>Phone:</strong> +86 13816069594</p>
+  <p><strong>WhatsApp:</strong> +86 13311977183</p>
   <p><strong>Address:</strong> Bldg. 1, Yuhongxing Tiandi, 2 Runye Rd., Jiading Dist., Shanghai, China</p>
 </div>
 <style>
